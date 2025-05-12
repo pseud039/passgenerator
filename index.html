@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <div class="toggle">
+        <label class="switch">
+          <input type="checkbox" class="mode">
+          <span class="checkbox-container"><span class="toggler-handler"></span></span>
+          <span class="theme">Theme</span>
+        </div> -->
+        <div class="toggle">
+            <label class="switch">
+              <input type="checkbox" class="mode">
+              <span class="checkbox-container"><span class="toggler-handler"><span class="gradient"></span></span>
+                <span class="light"></span>
+              </span>
+          <!--     <input type="checkbox" class="trigger-handle"> -->
+            
+            </label>
+            <span class="theme" id="dark">Theme</span>
+          </div>
+    <div class="container">
+        <div class="head">
+            <div class="logo">Password Generator</div>
+        </div>
+        <div class="showcase">
+            <span class="pass_value">0</span>
+            <button class="copyBtn">Copy</button>
+        </div>
+        <div class="maindiv">
+            <div class="length">
+                <div class="len_showcase">
+                    <span>Character length</span>
+                    <span class="len_value">0</span>
+                </div>
+                <input type="range" max="25" min="1" id="len_range">
+            </div>
+            <div class="checkboxes">
+                <label for="uppercase"><input type="checkbox" class="uppercase">Include Uppercase Characters</label>
+                <label for="lowercase"><input type="checkbox" class="lowercase">Include Lowercase Characters</label>
+                <label for="numbers"><input type="checkbox" class="numbers">Include numbers</label>
+                <label for="symbols"><input type="checkbox" class="symbols">Inlcude symbols</label>
+            </div>
+            <div class="generate_div">
+                <button class="generateBtn">Generate</button>
+            </div>
+        </div>
+    </div> 
+</body>
+<script src="script.js"></script>
+</html>
