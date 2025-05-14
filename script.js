@@ -46,12 +46,12 @@ function generate(){
         password += box[randomIndex];
     }
     checkboxes.forEach((checkbox)=>{
-        if(!checkbox.checked){
-            pass_value.innerText = "Invalid!";
-            return;
-        }
+       if(box.length=="0"){
+        pass_value.innerText="Invalid";
+        return;
+    }
         pass_value.innerText = password;
-    })
+
 }
 theme.addEventListener('change', function() {
     if (theme.checked) {
