@@ -45,7 +45,6 @@ function generate(){
         let randomIndex = Math.floor(Math.random() * box.length);
         password += box[randomIndex];
     }
-    checkboxes.forEach((checkbox)=>{
        if(box.length=="0"){
         pass_value.innerText="Invalid";
         return;
