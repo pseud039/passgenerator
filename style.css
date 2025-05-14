@@ -4,6 +4,10 @@
     --accent1:#178582;
     --accent2:#e2cfbb;
     --font-color:white;
+    --accent3: #58b5b2;
+    --accent4: #bbd4cf;
+    --accent5:#126a67;
+    
 }
 .light-theme{
   --primary-color:#becfe1;
@@ -11,6 +15,9 @@
   --accent1:#8A444E;
   --accent2:#AEA097;
   --font-color:black;
+  --accent3:#9a505b;
+  --accent4:#c67581;
+  --accent5:#4c242a;
 }
 
 
@@ -284,6 +291,7 @@ body{
     display: flex;
     justify-content: space-around;
     width:50vh;
+    border-radius:5px;
     box-shadow: 0 0 5px rgba(112, 92, 92, 0.3);
 
 }
@@ -299,6 +307,7 @@ body{
     padding:10px;
     background-color: var(--secondary-color);
     width:50vh;
+    border-radius:10px;
     box-shadow: 0 0 5px rgba(120, 98, 98, 0.3);
 
 }
@@ -320,7 +329,7 @@ input[type="range"]{
     height:10px;
     /* background:transparent; */
     /* border-radius:0; */
-    background: linear-gradient(to right, #58b5b2 , #bbd4cf );
+    background: linear-gradient(to right,var(--accent3) ,var(--accent4);
     transition: background 450ms ease-in;
     outline: none;
 }
@@ -330,7 +339,7 @@ input[type="range"]::-webkit-slider-thumb {
     appearance: none;
     width: 15px;
     height: 10px;
-    background:#126a67;
+    background:var(--accent5);
     /* border-radius: 50%; */
     cursor: pointer;
     position: relative;
