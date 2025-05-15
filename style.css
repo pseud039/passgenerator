@@ -324,7 +324,7 @@ body{
 }
 input[type="range"]{
     -webkit-appearance:none;
-    width:300px;
+    width:270px;
     height:10px;
     /* background:transparent; */
     /* border-radius:0; */
